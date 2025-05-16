@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais formulários</title>
+</head>
+<body>
+    <!--
+        label -> legenda para item da interface
+        for -> para
+
+        fieldset -> conjunto de campos
+        legend -> legenda para conjunto de campos
+    -->
+    <form action="processa.html" method="GET">
+        <label>
+        E-mail: <br>
+        <input type="text" name="email" id="user">
+        </label>
+        <br>
+        <label for="senha">Senha</label> <br>
+        <input type="password" name="password" id="senha">
+        <br> <br>
+        Sexo: <br>
+        <input type="radio" name="sexo" id="femi" value="feminino">
+        <label for="femi">Feminino</label> <br>
+        <input type="radio" name="sexo" id="masc" value="masculino">
+        <label for="masc">Masculino</label>
+        <br> <br>
+        Estilo Musical: <br>
+        <input type="checkbox" name="musica" id="1" value="rock">
+        <label for="1">Rock</label>
+        <input type="checkbox" name="musica" id="2" value="funk">
+        <label for="2">Funk</label> <br>
+        <input type="checkbox" name="musica" id="3" value="eletronica">
+        <label for="3">Eletrônica</label>
+        <input type="checkbox" name="musica" id="4" value="forro">
+        <label for="4">Forró</label>
+        <br> <br>
+        <label for="s">País de Origem</label> <br>
+
+        <select name="pais">
+
+            <option value="select">Select</option>
+            <option value="br">Brasil</option>
+            <option value="eu">EUA</option>
+            <option value="ca">Canadá</option>
+            <option value="ve">Venezuela</option>
+            <option value="ar">Argentina</option>
+
+
+        </select>
+        <br><br>
+
+        <input type="file" name="file" id="file">
+
+        <br><br>
+        <button type="reset">Resetar</button>
+        <button type="submit">Enviar</button>
+
+        <br><br>
+    </form>
+
+    <form>
+
+        <fieldset>
+        <legend>Dados pessoais</legend>
+        <label>
+        E-mail: <br>
+        <input type="text" name="email" id="user">
+        </label>
+        <br>
+        <label for="senha2">Senha</label> <br>
+        <input type="password" name="password" id="senha2">
+        <br> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados adicionais</legend>
+        Sexo: <br>
+        <input type="radio" name="sexo" id="femi2" value="feminino">
+        <label for="femi2">Feminino</label> <br>
+        <input type="radio" name="sexo" id="masc2" value="masculino">
+        <label for="masc2">Masculino</label>
+        <br> <br>
+        Estilo Musical: <br>
+        <input type="checkbox" name="musica" id="11" value="rock">
+        <label for="11">Rock</label>
+        <input type="checkbox" name="musica" id="22" value="funk">
+        <label for="22">Funk</label> <br>
+        <input type="checkbox" name="musica" id="33" value="eletronica">
+        <label for="33">Eletrônica</label>
+        <input type="checkbox" name="musica" id="44" value="forro">
+        <label for="44">Forró</label>
+        <br> <br>
+        </fieldset>
+    </form>
+</body>
+</html>
