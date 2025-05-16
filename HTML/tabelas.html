@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        table -> tabela
+        th -> (table header) cabeçalho da tabela
+        tr -> (table rows)linha da tabela
+        td -> (table data)conteúdo da linha
+
+        NÃO utilizar o BORDER (estamos usando apenas para fins de estudo)
+
+        colspan -> extenção de coluna
+        rowspan -> extensão de linha
+    -->
+    
+    <table>
+        <tr>
+            <th>Nome do Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Iphone SE 2020</td>
+            <td>2</td>
+            <td>R$ 200,00</td>
+        </tr>
+        <tr>
+            <td>Notebook Acer</td>
+            <td>1</td>
+            <td>R$ 3500,00</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <td colspan="2">R$ <del>3700</del> -> R$ <mark>2700</mark></td>
+        </tr>
+        <tr>
+            <td colspan="2">300x 12 vezes sem juros!</td>
+        </tr>
+    </table>
+</body>
+</html>
