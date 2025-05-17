@@ -21,15 +21,6 @@ Este repositório serve como:
 ✔️ SEO básico
 ✔️ Integração com CSS e JavaScript
 ```
-## 📊 Progresso Atual
-
-```mermaid
-pie
-    title Progresso por Área
-    "HTML" : 5
-    "CSS" : 0
-    "JS" : 0
-```
 ## Como usar este repositório
 
 1. Clone o repositório:
