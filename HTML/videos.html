@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executando vídeos</title>
+</head>
+<body>
+    <!--
+        source -> fonte
+        controls -> controles
+        muted -> mutado
+        autoplay -> reprodução automática
+        loop -> ciclo
+        poster -> cartaz
+
+        iframe -> permite que vc use uma pagina dentro de outra página
+    -->
+
+    <video width="640" height="360" controls muted loop poster="imagens/item1.jpeg">
+        <source src="videos/abelhas.mp4" type="video/mp4">
+        <source src="videos/flores.mp4" type="video/mp4">
+        Seu navegador não suporta a execução deste vídeo!
+    </video>
+
+    <iframe width="600" height="360" src="https://www.youtube-nocookie.com/embed/bYzVelqE8Es?si=NFQ1mU-j-dORMYsV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <iframe src="index.html" height="800" width="800" frameborder="125"></iframe>
+</body>
+</html>
