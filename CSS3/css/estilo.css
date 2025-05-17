@@ -1,0 +1,17 @@
+a {
+    color: green;
+}
+p {
+    color: #7124FA;
+}
+li{
+    background-color: rgb(0, 136, 255);
+    border: 1px solid black;
+}
+table{
+    background-color: orange;
+    border: 5px solid darkred;
+}
+th{
+    border: 5px solid black;
+}
