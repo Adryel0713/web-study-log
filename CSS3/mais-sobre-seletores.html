@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre seletores (prática)</title>
+
+    <style>
+        /*
+
+                #Seletor Universal
+
+            *{
+                border: 1px solid red;
+                margin: 0;
+                padding: 0;
+
+                #Seletor de Texto
+
+            h1, p, h2{
+            border: 1px solid black;
+
+
+                #Seletor de Classe
+
+            class="destaque titulo"
+
+            .destaque{
+            background-color: red;
+            .titulo{
+                color: white;
+
+            p.titulo{
+            color: white; // só vai funcionar nos P
+
+                #Seletor de Id
+
+            div#promocao{
+            background-color: purple; // só vai funcionar nos ids que tiverem numa div
+
+            div#h2div{
+            color: aqua;
+
+                #Seletor de filho
+
+            div>h1{
+            color: cadetblue;
+
+            div>h1, div>span{
+            color: cadetblue;
+
+                #Seletor Descendente
+
+            div h1{
+            color: cadetblue;
+
+            li a{
+            color: cadetblue;
+
+                #Seletor irmão adjacente
+
+            h1+p{
+            color: cadetblue; // Não pega de cima, só de baixo (unicamente e colado)
+
+
+                #Seletor irmão geral
+
+            h1~p{
+                color: cadetblue; // Não pega de cima,mas pega todos os debaixo (colados)
+        */
+        * {
+            padding: 5px;
+            margin: 0;
+        }
+        h1{
+            color: green;
+            font-size: 2em;
+            padding: 10px 0px;
+            
+        }
+        h1+p{
+            border-top: 2px solid gray;
+        }
+        p>a{
+            text-decoration: underline;
+            color: white;
+            background-color: purple;
+            padding: 0px;
+        }
+        p.destaque{
+            color: purple;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Título da página</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quis excepturi dolore nihil minima accusantium ducimus blanditiis animi harum, quia aspernatur voluptate, provident sapiente eum eos quidem ipsa, ex esse. <br>
+        <a href="">Leia mais</a> -
+        <a href="">Gostei(10)</a>
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et inventore veritatis dolor nihil illo vel, voluptate id dolore excepturi. Est enim necessitatibus corporis, nisi velit et ducimus ut consequatur.
+    </p>
+    <h2>Subtítulo da página</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde cumque itaque dolor placeat velit quidem nam magnam cum minima impedit esse iste, eum, odio veritatis? Reprehenderit molestiae aspernatur qui libero?
+    </p>
+    <p class="destaque">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit doloribus quisquam blanditiis, placeat officiis, ducimus qui sapiente mollitia officia, totam fuga neque odit! Consequuntur ex eum ipsum incidunt consequatur.
+    </p>
+
+    <!--
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, molestiae ex eveniet libero harum adipisci praesentium nobis hic tempora quos nisi non assumenda tenetur voluptate amet cumque totam temporibus illum!</p>
+
+    <h1>Irmão adjacente</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, molestiae ex eveniet libero harum adipisci praesentium nobis hic tempora quos nisi non assumenda tenetur voluptate amet cumque totam temporibus illum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, molestiae ex eveniet libero harum adipisci praesentium nobis hic tempora quos nisi non assumenda tenetur voluptate amet cumque totam temporibus illum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, molestiae ex eveniet libero harum adipisci praesentium nobis hic tempora quos nisi non assumenda tenetur voluptate amet cumque totam temporibus illum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, molestiae ex eveniet libero harum adipisci praesentium nobis hic tempora quos nisi non assumenda tenetur voluptate amet cumque totam temporibus illum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, molestiae ex eveniet libero harum adipisci praesentium nobis hic tempora quos nisi non assumenda tenetur voluptate amet cumque totam temporibus illum!</p>
+
+
+
+    <div>
+        <h1>Isso é um h1 dentro da div principal</h1>
+        <div>
+            <span>
+                <p>Isso é um parágrafo dentro de um span</p>
+                <h1>Teste</h1>
+            </span>
+            <h1>Esse é um h1 dentro da div secundária</h1>
+        </div>
+    </div>
+
+
+
+    <h1 class="destaque titulo">Título da página</h1>
+
+    <h2>Subtítulo da página</h2>
+
+    <p class="destaque titulo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex quidem quis id fugiat beatae reprehenderit veniam aut consectetur sint commodi neque, fugit cupiditate iusto nam! Aliquid quia optio quos.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex quidem quis id fugiat beatae reprehenderit veniam aut consectetur sint commodi neque, fugit cupiditate iusto nam! Aliquid quia optio quos.
+    </p>
+    <h2>Subtítulo da página</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex quidem quis id fugiat beatae reprehenderit veniam aut consectetur sint commodi neque, fugit cupiditate iusto nam! Aliquid quia optio quos.
+    </p>
+    <div id="promocao">
+        <h2 id="h2div">Subtítulo da página</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex quidem quis id fugiat beatae reprehenderit veniam aut consectetur sint commodi neque, fugit cupiditate iusto nam! Aliquid quia optio quos.
+    </p>
+    </div>
+
+    <span >Teste</span>
+    -->
+</body>
+</html>
