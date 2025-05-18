@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .caixa{
+            width: 700px;
+            height: 300px;
+            border: 3px solid black;
+            /*
+                background-color: burlywood;
+                background-image: url(img/fundo-css-claro.png);
+            /*
+            /*
+                repeat ->  é repetida horizontal e vertical
+                repeat-x -> é repetida horizontalmente
+                repeat-y -> é repetida verticalmente
+                no-repeat -> não repete
+
+                background-repeat: no-repeat;
+            */
+
+            /* 
+                fixed -> a imagem permanece na mesma posição
+                scrool -> a imagem sem move com o conteúdo quando o usuario move a pagina (scrol)
+
+                background-attachment: scroll;
+            */
+
+            /*
+                Quando a imagem não é repetida, você pode posicionar a imagem horizontal: left,center,right
+                * Necessário escolher dois valorez,senão será utilizado center como segundo valor
+                (HORIZONTAL - VERTICAL)
+
+                background-position: left bottom;
+
+                background-position-x: center;
+                background-position-y: center;
+            */
+
+
+
+            /*
+                Todas as propriedades resumidas ordem: cor, imagem, repeat, attachment, position
+
+                background: bisque url(img/fundo-css-escuro.png) no-repeat scroll center center;
+
+                background: bisque url(img/fundo-css-escuro.png) no-repeat scroll;
+
+                background: bisque url(img/fundo-css-escuro.png) no-repeat;
+
+                background: url(img/fundo-css-escuro.png) no-repeat;
+
+                background: url(img/fundo-css-escuro.png);
+            */
+
+            background: url(img/fundo-css-escuro.png);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="caixa">
+
+        <h1>Título de texto</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus atque, impedit, possimus, veritatis exercitationem assumenda nulla delectus voluptatem ratione enim eligendi illo? Beatae enim nesciunt rem ex, libero temporibus vitae!
+        </p>
+
+    </div>
+</body>
+</html>
