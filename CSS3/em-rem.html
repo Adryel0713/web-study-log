@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em e Rem</title>
+
+    <style>
+        html{
+            font-size: 16px;
+        }
+        body{
+            font-size: 16px;
+        }
+        #em{
+            font-size: 1em;
+            /* 1 em -> 16 pixels (por causa de seu pai (body))*/
+        }
+        #rem{
+            font-size: 1rem;
+            /* 1 rem -> 16 pixels (por causa do root -> <html>) */
+        }
+        #porcentagem{
+            font-size: 100%;
+        }
+
+        #conjunto{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="em">EM</p>
+    <p id="rem">REM</p>
+    <p id="porcentagem">PORCENTAGEM</p>
+
+    <hr>
+
+    <div id="conjunto">
+        <p id="em">EM</p>
+        <p id="rem">REM</p>
+        <p id="porcentagem">PORCENTAGEM</p>
+    <!-- 
+        o EM é 20px por causa do seu pai (a div de id= "conjunto")
+        o REM é 16px por causa de seu pai (a tag HTML)
+        A PORCENTAGEM é 20px por causa de seu pai (a div de id= "conjunto")
+    -->
+    </div>
+</body>
+</html>
