@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe e Pseudo-elemento</title>
+
+    <style>
+
+        /* 
+        
+        PSEUDO-CLASSE
+
+        :hover -> quando passa o mouse em cima
+
+        ***
+        links:
+        ***
+        a{
+            text-decoration: none;
+            color: green;
+        }
+
+        // Links não visitados
+
+        a:link
+
+        // Links visitados
+
+        a:visited
+
+        // Links hover,passar o curso sobre o link
+
+        a:hover
+
+        // Links ativos
+        
+        a:active //ao clicar
+
+        ***
+        Formularios:
+        ***
+
+        input:checked //ao marcar
+
+        input:focus //ao selecionar uma caixa de texto,ele muda a formatação de quando clicado
+
+        input:required //Algo que seja necessário preencher, você coloca isso num input por exemplo, e nisso você consegue por um estilo em algo obrigatório
+
+        PSEUDO-ELEMENTO
+
+
+        p::first-line //Seleciona a 1 linha
+
+        p::first-letter //Seleciona a 1 letra
+
+        p::selection //é tipo, você tem um texto e vc quer dar um ctrl + c pra copiar,mas pra isso vc tem que selecionar ele, e é nisso que essa tag define,ela define um estilo pra isso..
+
+        h2::before{ //Coloca algo antes 
+        content: "{";
+        }
+        h2::after{ //Coloca algo depois
+        content: "{";
+        }
+        */
+
+
+        a{
+            text-decoration: none;
+            color: green;
+        }
+
+
+
+        a:hover{
+            background-color: blue;
+            color: white;
+        }
+        a:link{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Conteúdo da Div 
+        <h2>COnteúdo do h2</h2>
+
+        <a href="">Google</a>
+    </div>
+</body>
+</html>
