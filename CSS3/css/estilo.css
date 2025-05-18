@@ -1,4 +1,47 @@
-/* CSS do site americanas de exemplo */
+/* Cascata e herança 
+p {
+    color: red; 
+}
+
+p {
+    color: blue; 
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS do exercício Classe e ID */
+/* #topo {
+    background: yellow;
+}
+
+#rodape {
+    border: 2px solid grey;
+}
+
+.curso {
+    background: lightgrey;
+}
+
+.curso-destaque {
+    background: orange;
+} */
+
+/* CSS do site americanas de exemplo 
 #topo {
     background: red;
 }
@@ -14,7 +57,7 @@
 .destaque {
     background: green;
 }
-
+*/
 
 
 /*
