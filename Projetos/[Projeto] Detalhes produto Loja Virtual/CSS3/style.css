@@ -1,0 +1,39 @@
+html{
+    margin: 0px;
+}
+body{
+    background-color: rgba(212, 234, 255, 0.889);
+    margin: 0px;
+}
+#tudo{
+    width: 700px;
+    margin: 20px auto 0px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.49);
+}
+#name{
+    padding: 10px 10px 0px 10px;
+    color: purple;
+}
+#codigo{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: gray;
+}
+#iphone{
+    border: 2px solid purple;
+    width: 300px;
+    margin-left: 10px;
+}
+img{
+    margin: 0px auto;
+    width: 300px;
+    padding-right: 20px;
+}
+#bot{
+    padding-left: 10px;
+}
+span{
+    color: gray;
+}
