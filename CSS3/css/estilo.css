@@ -1,17 +1,46 @@
+/* CSS do site americanas de exemplo */
+#topo {
+    background: red;
+}
+
+#promocao {
+    background: grey;
+}
+
+#produtos-promocao {
+    background: lightgray;
+}
+
+.destaque {
+    background: green;
+}
+
+
+
+/*
+h2 {
+    color: blue;
+}
+
 a {
-    color: green;
+    color: darkgreen;
 }
+
 p {
-    color: #7124FA;
+    color: indianred;
 }
-li{
-    background-color: rgb(0, 136, 255);
-    border: 1px solid black;
+
+li {
+    background-color: lightblue;
+    border: 1px solid blue;
 }
-table{
+
+table {
     background-color: orange;
     border: 5px solid darkred;
 }
-th{
+
+td {
     border: 5px solid black;
 }
+*/
