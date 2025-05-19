@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        clear: left; - left,right,both
+        display: block; - inline,block,table
+        */
+        #cabecalho{
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 870px;
+            background-color: orange;
+            height: 300px;
+        }
+
+        .caixa{
+            width: 250px;
+            background-color: rgb(199, 241, 214);
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+        .caixa2{
+            width: 250px;
+            height: 300px;
+            background-color: rgb(199, 241, 214);
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+
+        .s::after{
+            content: " ";
+            clear: both;
+            display: block;
+            /*display: inline; - nada vai mudar*/
+        }
+
+        .limpar{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="cabecalho">
+        <div class="caixa">
+            <h2>Lorem ipsum dolor sit amet 1</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore optio quis maxime et qui voluptatem magnam dicta.</p>
+        </div>
+        <div class="caixa2">
+            <h2>Lorem ipsum dolor sit amet 2</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore optio quis maxime et qui voluptatem magnam dicta.</p>
+        </div>
+        <div class="caixa">
+            <h2>Lorem ipsum dolor sit amet 3</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore optio quis maxime et qui voluptatem magnam dicta.</p>
+        </div>
+
+
+    <span class="s">
+    </span>
+
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore optio quis maxime et qui voluptatem magnam dicta.</p>
+    </div>
+
+
+
+</body>
+</html>
