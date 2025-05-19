@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+
+    <style>
+
+        body {
+            background-color: aqua;
+        }
+        .container{
+            width: 800px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .nav{
+            background-color: royalblue;
+            padding: 15px;
+        }
+        .nav > img{
+            width: 100px;
+        }
+        .nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: 900;
+            padding: 10px;
+        }
+        .nav > a:hover{
+            background-color: white;
+            color: royalblue;
+        }
+
+        .final{
+            background-color: #d62598;
+            width: 170px;
+            height: 200px;
+            padding: 20px;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+        }
+        textarea{
+            width: 170px;
+            height: 80px;
+        }
+        .canto{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="img/logo-magalu.png" alt="">
+
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Produtos</a>
+            <a href="">Meus pedidos</a>
+            <a href="">Contato</a>
+        </div>
+            <div class="canto">
+                <img src="img/novo.png" alt="">
+            </div>
+        <div>
+
+            <h1>Título do site</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maiores animi fugiat harum culpa minima, suscipit sunt dolores cum, odit veniam iste. Doloremque repellat eveniet, sed necessitatibus beatae deserunt nam?
+            </p>
+            <h1>Título do site</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maiores animi fugiat harum culpa minima, suscipit sunt dolores cum, odit veniam iste. Doloremque repellat eveniet, sed necessitatibus beatae deserunt nam?
+            </p>
+            <h1>Título do site</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maiores animi fugiat harum culpa minima, suscipit sunt dolores cum, odit veniam iste. Doloremque repellat eveniet, sed necessitatibus beatae deserunt nam?
+            </p>
+
+        </div>
+        
+        <div class="final">
+            <h3>Chat</h3>
+
+            <textarea placeholder="Digite sua mensagem"></textarea> <br>
+
+            <button>Enviar chat</button>
+        </div>
+    </div>
+</body>
+</html>
