@@ -1,0 +1,51 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: white url(../img/fundo.png) scroll; 
+}
+#corpo{
+    margin: 10px;
+    width: 900px;
+    background: rgb(246, 240, 229);
+}
+#imagem-principal > img{
+    width: 900px;
+}
+
+#links{
+    margin-top: -4px;
+    padding: 15px;
+    background-color: rgb(220, 200, 174);
+}
+a{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: rgb(0, 97, 183);
+    font-weight: bold;
+}
+#sobre{
+    padding: 10px;
+}
+.h1-de-sobre{
+    font-size: 18px ;
+    padding: 10px 10px 10px 0px;
+    color: gray;
+}
+
+#sobre > p{
+    padding: 10px;
+    padding-left: 0px;
+}
+#rodape{
+    text-align: center;
+    background-image: url(../img/fundo.png);
+    padding: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+}
