@@ -1,0 +1,43 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            padding: 20px 20px 20px 20px;
+        }
+
+        #nav ul li a{
+            padding: 10px 30px;
+            border: 1px solid black;
+            display: block;
+            background: url(../img/seta.png) no-repeat 10px 12px;
+            text-decoration: none;
+            color: black;
+        }
+        #nav ul li a:hover{
+            
+            background: url(../img/seta.png) no-repeat 20px 12px;
+            padding-left: 40px;
+            background-color: orangered;
+        }
+
+        #nav ul li a:active{
+            background: url(../img/seta.png) no-repeat 20px 12px;
+            padding-left: 40px;
+            background-color: rgb(255, 0, 0);
+        }
+        #nav ul{
+            background-color: orange;
+            width: 200px;
+            margin: 20px;
+            list-style: none;
+        }
+
+        #home #nav li.home a,
+        #produtos #nav li.produtos a,
+        #carrinho #nav li.carrinho a{
+            background: cadetblue url(../img/seta.png) no-repeat 20px 12px;
+            padding-left: 40px;
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }

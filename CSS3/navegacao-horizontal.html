@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+         ul li{
+            list-style-type: none;
+        }
+        ul{
+            padding: 10px;
+        }
+        li a{
+            float: left;
+            border: 1px solid black;
+            background-color: black;
+            padding: 0.8em 2em;
+            border-radius: 30px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 0.01em;
+            margin-bottom: 0.6em;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:hover{
+            float: left;
+            background: orange url(img/seta.png)
+            no-repeat 15px center;
+        }
+        #nav{
+            background-color: black;
+            width: 700px;
+            height: 65px;
+        }
+        #ttd::after{
+            content: " ";
+            clear: both;
+            display: block;
+        }
+        #principal{
+            padding: 10px;
+        }
+        #home #principal #nav li.home a{
+            background: cadetblue url(img/seta.png) no-repeat 15px center;
+            padding-left: 40px;
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }
+
+        a:active{
+            background: cadetblue url(img/seta.png) no-repeat 15px center;
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body id="home">
+    <div id="principal">
+
+            <h1>Menu de navegação</h1>
+
+        <div id="nav">
+            <ul>
+                <li class="home">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Produtos</a>
+                </li>
+                <li>
+                    <a href="">Carrinho</a>
+                </li>
+                <li>
+                    <a href="">Contato</a>
+                </li>
+                
+            </ul>
+        </div>
+                <span id="ttd"></span>
+    </div>
+        <h2>Conteúdo</h2>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex officiis veniam quia optio non nobis assumenda magni blanditiis corporis. Odio molestias, eius officia magni autem dolor. Aspernatur vitae nostrum quos.
+        </p>
+</body>
+</html>
