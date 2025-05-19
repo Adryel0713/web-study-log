@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: aquamarine;
+        }
+        .container{
+            margin: 0 auto;
+            width: 600px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+            position: relative;
+        }
+        .borda{
+            border: 1px solid black;
+        }
+        .estatico{ /* Fluxo Normal */
+            position: static;
+        }
+        .relativa{ /* Fluxo Relativo */
+            position: relative;
+            /*
+            top:20px;
+            left: 20px;
+            */
+            right: 30px;
+            }
+        .absoluta{
+            /*
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            margin: 0;
+            */
+            /* Ele precisa ter uma outra position como base, e no caso é a container.. */
+        }
+        .fixo{
+            position: fixed;
+            width: 200px;
+            height: 120px;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+            <div class="fixo" style="background-color: blueviolet;">
+
+                <h3>chat</h3>
+                <button>enviar mensagem</button>
+            </div>
+
+
+
+        <h1 class="borda">Posição Absoluta</h1>
+        <p class="borda absoluta" style="color: lightgreen;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+
+        <p class="borda">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+
+        <hr>
+        <h1 class="borda">Posição Relativo</h1>
+        <p class="borda relativa" style="background-color: lightgreen;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+
+        <p class="borda">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+
+        <hr>
+
+        <h1 class="borda estatico">Posição Normal</h1>
+        <p class="borda estatico">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+        <p class="borda estatico">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+        <p class="borda estatico">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim non error nemo iusto? Quas quo nam nisi, qui officiis explicabo pariatur magnam autem vero porro accusantium libero repudiandae nihil.
+        </p>
+
+    </div>
+</body>
+</html>
