@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição</title>
+
+    
+
+
+    <style>
+        /* 
+            z-index: 0;
+            z-index: 1; //1 a você escolhe,quanto maior,maior a prioridade,também é permitido negativos..(vai pra baixo)
+            z-index: -1;
+        */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            padding: 20px 10px 10px 10px;
+        }
+        .caixa{
+            background-color: rgb(216, 23, 216);
+            width: 700px;
+            position: relative;
+            margin: 10px;
+            color: white;
+            font-weight: bold; 
+            height: 250px;
+        }
+        .destaque{
+            background-color: orange;
+            width: 120px;
+            padding: 10px 10px 10px 15px;
+            position: relative;
+            bottom: 80px;
+            left: 20px;
+            border-radius: 20px;
+            border: 2px solid rgb(216, 23, 216);
+        }
+
+        .promocao{
+            text-align: center;
+            border: 3px dotted rgb(216, 23, 216);
+            background-color: white;
+            color: rgb(216, 23, 216);
+            margin-left: 60px;
+            margin-right: 60px;
+            position: relative;
+            padding: 20px;
+            height: 20px;
+            bottom: 50px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício</h1>
+    <div class="caixa">
+
+        <img src="img/banner.png" width="700">
+
+        <div class="destaque">
+            Tempo limitado
+        </div>
+
+        <div class="promocao">
+            Quero a promoção
+        </div>
+    </div>
+</body>
+</html>
