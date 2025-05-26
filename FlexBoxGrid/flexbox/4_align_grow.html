@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+            Flex-grow: 0; -> (Crescimento do item)Tenha o mínimo pra guardar meu conteúdo
+            Flex-grow: 1; -> Todos os itens vão ocupar o espaço de forma proporcional
+            Flex-grow: 2; -> vai ter o dobro da largura que o Flex-grow: 1, e vai ser de forma proporcional.. (de acordo com o espaço disponível)
+            Flex-grow: auto; -> automatico
+        */
+        .geral{
+            height: 240px;
+            width: 900px;
+            border: 4px solid red;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 0 auto;
+        }
+        .geral > div{
+            border: 4px solid white;
+            color: white;
+            padding: 18px;
+            margin: 4px;
+            flex-basis: 10px;
+        }
+        .column{
+            flex-flow: column wrap;
+        }
+        .row{
+            flex-flow: row wrap;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .item1,.item3{
+            flex-grow: 1;
+        }
+        .item2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Column</h1>
+
+    <div class="column geral">
+        <div class="item1">Olá Clauber Adryel</div>
+        <div class="item2">Você está bem?</div>
+        <div class="item3">Está estudando?</div>
+    </div>
+    <h1>Row</h1>
+
+    <div class="row geral">
+        <div class="item1">Olá Clauber Adryel</div>
+        <div class="item2">Você está bem?</div>
+        <div class="item3">Está estudando?</div>
+    </div>
+</body>
+</html>
