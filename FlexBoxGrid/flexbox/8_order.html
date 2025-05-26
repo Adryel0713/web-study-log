@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+            Flex-shrink: 2; -> É o oposto do grow,no caso dele.. é o encolhimento
+        */
+        .geral{
+            border: 4px solid red;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .geral > div{
+            border: 4px solid white;
+            color: white;
+            padding: 4px;
+            margin: 4px;
+            flex-basis: 180px;
+        }
+        .column{
+            flex-direction: column;
+            height: 400px;
+        }
+        .row{
+            flex-direction: row;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+        }
+        .item1{
+            order: 4;
+        }
+        .item2{
+            order: 3;
+        }
+        .item3{
+            order: 2;
+        }
+        .item4{
+            order: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Column</h1>
+
+    <div class="column geral">
+        <div class="item1">01</div>
+        <div class="item2">02</div>
+        <div class="item3">03</div>
+        <div class="item4">04</div>
+    </div>
+    <h1>Row</h1>
+
+    <div class="row geral">
+        <div class="item1">01</div>
+        <div class="item2">02</div>
+        <div class="item3">03</div>
+        <div class="item4">04</div>
+    </div>
+</body>
+</html>
