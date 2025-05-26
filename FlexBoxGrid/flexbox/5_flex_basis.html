@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+            Flex-basis: auto; -> automaticamente
+            Flex-basis: 0; -> ajusta a menor largura possível
+            Flex-basis: 100px; -> ajusta a largura de 100px
+        */
+        .geral{
+            height: 240px;
+            width: 900px;
+            border: 4px solid red;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 0 auto;
+        }
+        .geral > div{
+            border: 4px solid white;
+            color: white;
+            padding: 18px;
+            margin: 4px;
+        }
+        .column{
+            flex-flow: column wrap;
+        }
+        .row{
+            flex-flow: row wrap;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .item1,.item3{
+            flex-basis: 200px;
+        }
+        .item2{
+            flex-basis: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Column</h1>
+
+    <div class="column geral">
+        <div class="item1">Olá dawdaw awdawd dawd dwadawd</div>
+        <div class="item2">Olá dawdaw awdawd dawd dawdawd</div>
+        <div class="item3">Olá dawdaw awdawd dawd dwad d</div>
+    </div>
+    <h1>Row</h1>
+
+    <div class="row geral">
+        <div class="item1">Olá dawdaw awdawd dawd dawd</div>
+        <div class="item2">Olá dawdaw awdawd dawd dawd</div>
+        <div class="item3">Olá dawdaw awdawd dawd dawdawd</div>
+    </div>
+</body>
+</html>
