@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+
+    <style>
+        body{
+            font-size: 2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 1fr; */
+
+            /* grid-template-areas: 
+            'cabecalho cabecalho'
+            'navegacao navegacao'
+            'conteudo conteudo'
+            'rodape rodape'; */
+
+            row-gap: 20px;
+            column-gap: 20px;
+
+            /* grid-template-areas: 
+            'cabecalho navegacao'
+            'conteudo conteudo'
+            'rodape rodape'; */
+
+            /* grid-template-areas: 
+            'cabecalho navegacao'
+            'conteudo rodape'; */
+
+            /* grid-template-areas: 
+            'cabecalho cabecalho navegacao'
+            'cabecalho cabecalho conteudo'
+            'rodape rodape rodape'; */
+
+            grid-template-areas: 
+            'cabecalho conteudo navegacao'
+            'cabecalho conteudo rodape';
+            
+        }
+        header,nav,main,footer{
+            border: 1px solid yellowgreen;
+        }
+        header{grid-area: cabecalho;}
+        nav{grid-area: navegacao;}
+        main{grid-area: conteudo;}
+        footer{grid-area: rodape;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <header>Aqui vai o cabecalho</header>
+        <nav>Home | Produtos | Planos | Contato</nav>
+        <main>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto vitae velit consequatur. Id cum, eligendi omnis facere sapiente consectetur voluptatibus maiores tempore autem tenetur quidem adipisci ea voluptates! Eius.
+        </main>
+        <footer>Aqui vai o rodape</footer>
+    </div>
+
+
+</body>
+</html>
