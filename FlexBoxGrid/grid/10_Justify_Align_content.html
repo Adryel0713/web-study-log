@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+
+    <style>
+        body{
+            font-size: 2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid{
+            border: 1px solid white;
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            height: 400px;
+            /* justify-items: center; Aqui é com base na vertical (usa tudo oq o justify-items do flexbox usa)
+            align-items: center; Aqui é com base na horizontal (usa tudo oq o align-items do flexbox usa) */
+            
+            justify-content: center; /*Aqui é com base na vertical (usa tudo oq o justify-content do flexbox usa)*/
+            align-content: center; /*Aqui é com base na horizontal (usa tudo oq o align-content do flexbox usa)*/
+        }
+        .grid div{
+            border: 1px solid greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+
+
+</body>
+</html>
