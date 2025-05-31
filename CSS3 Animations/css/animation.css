@@ -1,0 +1,60 @@
+body{
+    display: grid;
+    margin: 10px;
+    border: 1px solid black;
+    height: 100vh;
+    align-items: center;
+}
+.box{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+
+    /* 
+
+    animation-name: ; -> Nome da animação (precisa ser igual ao da keyframe)    
+    
+    animation-duration: 1s; -> tempo da animação (s,ms)
+    animation-timing-function: ; -> igual ao transition-timing-function,mas possui o steps também que limita a quantidade de frames, steps(3,jump-end); -> o momento onde será executado, r possui o linear
+    animation-delay: 2s; -> Tempo até iniciar a animação
+    animation-iteration-count: 4; -> quantidade de vezes que a animação vai se repetir, infinite -> infinito
+
+    animation-direction: reverse; -> direção da animação
+    animation-fill-mode: both; -> define onde a animação vai parar quando ela terminar
+    animation-play-state: running; -> define se está rodando ou pausada
+    */
+
+    /* animation-name: fly;
+    animation-duration: 2s;
+    animation-timing-function: linear; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    /* animation-fill-mode: both; */
+
+
+    /* 
+    animation: ; - name,duration,timing-function,
+    delay,iteration-count,direction,fill-mode,play-state
+    -> podem ser usados emitindo outros
+    */
+    animation: fly 2s running;
+    
+    /* &:hover{
+      animation-play-state: paused;  
+    } */
+
+    animation: ;
+}
+
+@keyframes fly{
+
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(260vh - 100vh));
+    }
+}
+
+

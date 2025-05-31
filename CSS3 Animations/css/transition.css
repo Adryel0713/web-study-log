@@ -1,0 +1,28 @@
+body{
+    margin: 30px;
+}
+.box{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+
+    /* 
+        transition-property: ; -> escolhe qual propriedade css vai passar pela transição
+
+        transition-duration: ; -> duração da transição
+
+        transition-delay: ; -> da um delay entre a ação e a transição
+
+        transition-timing-function: ; -> (ease-in (inicio), ease-out (fim), ease-in-out(inicio e fim), cubic-bezier() -> serie de pontos) -> suavização
+    */
+    
+    transition-property: background-color,border-radius;
+    transition-duration: 2s,1.5s;
+    /* transition-delay: 1s; */
+    transition-timing-function: cubic-bezier(.15,.89.85,.26);
+
+}
+.box:hover{
+    background-color: blueviolet;
+    border-radius: 50%;
+}

@@ -1,0 +1,22 @@
+body{
+    animation: inv 2s ease-in-out forwards;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.inv{
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+}
+
+@keyframes inv{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

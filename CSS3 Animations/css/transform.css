@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.box{
+    outline: 5px solid red;
+}
+
+img{
+    /* 
+        translateX()
+        translateY()
+        translate(-100px,20%) -> (x,y)
+
+        scaleX()
+        scaleY()
+        scale() -> Ambos
+
+        rotate(-45deg) -> deg (graus), turn(volta)
+
+        skewX()
+        skewY()
+        skew(20deg) -> Inclinada
+
+        transform: translateX(100px) scale(1.5) rotate(-15deg);
+    */
+    transform: translateX(100px) scale(1.5) rotate(-15deg);
+    /* transform: translateX; -> Ele elimina o resto de cima */
+}

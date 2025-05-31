@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    margin: 10px;
+    border: 1px solid black;
+    height: 100vh;
+    align-items: center;
+}
+.box{
+    animation: fly 1s; /* Outro módulo pra ensinar isso */
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+
+
+
+}
+
+/* 
+@keyframes -> especificar a animação 
+
+@keyframes fly{
+
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(calc(260vh - 100vh));
+    }
+} 
+@keyframes fly{
+
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translate(calc(260vh - 100vh));
+    }
+} 
+@keyframes fly{
+
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100vh,-100px);
+    }
+    100%{
+        transform: translate(calc(260vh - 100vh),0);
+    }
+}
+    */
+@keyframes fly{
+
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100vh,-100px);
+    }
+    100%{
+        transform: translate(calc(260vh - 100vh),0);
+    }
+}
+
+
