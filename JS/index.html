@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu primeiro código em JS</h1>
+
+    <span id="first"></span>
+
+    <script>
+
+        var hora = new Date().getHours()
+        var saudacao
+
+        if (hora < 12) {
+            saudacao = "Bom dia"
+        }else if(hora < 18){
+            saudacao = "Boa tarde"
+        }else{
+            saudacao = "Boa noite"
+        }
+
+        document.getElementById("first").innerHTML = saudacao
+    </script>
+</body>
+</html>
