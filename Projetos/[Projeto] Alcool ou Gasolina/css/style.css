@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url(../img/image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.525);
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: transparent;
+    border-radius: 8px;
+}
+h2{
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    width: 200px;
+    font-size: 1.6em;
+    text-align: center;
+    color: rgb(255, 255, 255,.6);
+}
+.form-box input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding-left: 5px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.form-box input::placeholder{
+    color: rgb(255, 255, 255,.6);
+    font-weight: 600;
+}
+.resultado{
+    width: 100%;
+    height: 100%;
+    padding: 5px 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255,.6);
+}
+.calcular{
+    border: 1px solid rgb(255,255,255,.6);
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255,.6);
+    background-color: transparent;
+    cursor: pointer;
+}
