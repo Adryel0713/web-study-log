@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Selecionando Elementos..</title>
+</head>
+<body>
+    <div id="destaque">Área de Conteúdo!</div>
+    <h1 class="vermelho">Título do site</h1>
+    <p>subtitulo</p>
+
+    <ul>
+        <li class="primeiro">Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <button onclick="clicar()">Enviar</button>
+    <script type="text/javascript">
+
+        // const obj = document.getElementById('destaque');
+        // console.log(obj.textContent);
+
+        // const obj = document.querySelector('#destaque');
+        // console.log(obj);
+
+        // const obj = document.querySelector('ul li.primeiro');
+        // console.log(obj);
+
+        function clicar(){
+            // const mensagem = document.querySelector('button').innerHTML = "Carregando.."
+            const mensagem = document.querySelector('button');
+            mensagem.innerHTML = "Carregando..";
+            mensagem.classList.add("destaque");
+        }
+    </script>
+</body>
+</html>
