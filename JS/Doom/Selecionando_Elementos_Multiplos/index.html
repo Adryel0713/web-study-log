@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Selecionando Elementos..</title>
+</head>
+<body>
+    <div id="destaque">Área de Conteúdo!</div>
+    <h1 class="vermelho">Título do site</h1>
+    <p>subtitulo</p>
+    <div>Area de Conteudo 2</div>
+    <h1 class="vermelho">Título do site 2</h1>
+    <ul>
+        <li class="primeiro">Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <li class="primeiro">Item 1 alterado</li>
+        <li>Item 2 alterado</li>
+    </ul>
+
+    <input type="text" name="nome">
+
+    <button onclick="clicar()">Enviar</button>
+    <script type="text/javascript">
+
+        // const obj = document.getElementById('destaque');
+        // console.log(obj.textContent);
+
+        // const obj = document.querySelector('#destaque');
+        // console.log(obj);
+
+        // const obj = document.querySelector('ul li.primeiro');
+        // console.log(obj);
+
+        // function clicar(){
+        //     // const mensagem = document.querySelector('button').innerHTML = "Carregando.."
+        //     const mensagem = document.querySelector('button');
+        //     mensagem.innerHTML = "Carregando..";
+        //     mensagem.classList.add("destaque");
+        // }
+
+        //const colecao = document.getElementsByTagName('li');
+        // console.log(obj.length);
+        // const lista = []
+        // console.log(lista.reduce);
+        // for(let i=0; i < obj.length; i++){
+        //     console.log(obj[i].textContent);
+        //     console.log(obj[i]);
+        // }
+        
+        //const lista = Array.from(colecao)
+
+        // const funcao = function(item,i){
+        //     console.log(item.textContent);
+        // }
+        // lista.forEach(funcao)
+        // lista.forEach((item,i) => console.log(item.textContent))
+
+
+        // console.log(lista.reduce);
+
+        // const colecao = document.getElementsByClassName('vermelho');
+        // console.log(colecao);
+
+
+        // const colecao = document.getElementsByName('nome');
+        // console.log(colecao[0]);
+
+         const colecao = document.querySelectorAll('li.primeiro');
+        console.log(colecao[1].textContent);
+
+    </script>
+</body>
+</html>
