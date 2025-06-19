@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Selecionando Elementos..</title>
+</head>
+<body>
+    <form name="cadastro">
+        <input type="text" name="nome" id="nome">
+        <input type="text" name="email">
+        <select name="sexo">
+            <option value="#">--------</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        <button type="button" onclick="valor()">valores</button>
+    </form>
+    <script type="text/javascript">
+
+        // const obj = document.getElementsByName('cadastro');
+        // console.log(obj);
+
+        // console.log(document.forms[1])
+
+        // console.log(document.cadastro.nome)
+        // console.log(document.cadastro.sexo)
+
+        // console.log(document.cadastro.nome.value = "adryel")
+        // console.log(document.cadastro.sexo.value = "#")
+
+        // function valor(){
+        //     document.cadastro.nome.value = "Clauber";
+        //     document.cadastro.email.value = "Clauber@gmail.com";
+        //     document.cadastro.sexo.value = "";
+        // }
+        // function valor(){
+        //     let nome = document.cadastro.nome.value;
+        //     console.log(nome);
+        // }
+
+        function valor(){
+            let nome = document.getElementById('nome')
+            console.log(nome.value);
+        }
+    </script>
+</body>
+</html>
