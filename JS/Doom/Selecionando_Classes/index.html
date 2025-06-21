@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<style>
+    .vermelho {
+        color: blueviolet;
+    }
+</style>
+<body>
+
+    <span class="vermelho aaaa aaaa bbb ccc">Texto aqui</span>
+
+    <button onclick="clicar()">clique aqui</button>
+
+    <script>
+
+        function clicar(){
+            const pegar = document.querySelector('span');
+            const classes = pegar.classList;
+
+            // console.log(classes);
+            // console.log(classes.length);
+            // console.log(classes.contains('vermelho'));
+            // classes.add("texto");
+            // classes.remove("texto");
+            
+            // pegar.className = "texto";
+            
+            classes.forEach(x => console.log(x));
+        }
+
+    </script>
+</body> 
+</html>
