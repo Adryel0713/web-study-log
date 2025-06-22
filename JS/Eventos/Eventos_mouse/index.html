@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body onload="executar()"> -->
+<body>
+    
+   <button>Clique aqui!</button>
+   <input type="text">
+
+    <script>
+        function executar(){
+            console.log("Executar");
+        }
+        function executar2(){
+            console.log("teclado executar");
+        }
+
+        // const clicar = document.querySelector('button')
+        // clicar.addEventListener('click',executar); // Pressiona e solta o botão sobre o mesmo elemento
+        //clicar.addEventListener('dblclick',executar); // Pressiona e solta o botão duas vezes sobre o mesmo elemento
+        //clicar.addEventListener('mousedown',executar); // Pressiona o botão do mouse sobre um elemento
+        //clicar.addEventListener('mouseup',executar); // Solta o botão do mouse sobre um elemento
+        //clicar.addEventListener('mousemove',executar); // Move o mouse *
+        //clicar.addEventListener('mouseover',executar); // Move o mouse sobre um elemento *
+        //clicar.addEventListener('mouseout',executar); // Move o mouse para fora do elemento *
+        // * -> não em uma tela sensível ao toque
+
+        const texto = document.querySelector('input')
+        texto.addEventListener('mouseover',executar)
+        texto.addEventListener('keydown',executar2)
+    </script>
+</body>
+</html>
