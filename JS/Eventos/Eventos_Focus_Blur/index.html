@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="texto">
+    <br> <br>
+    <input type="password" name="senha">
+
+    <script>
+
+        function executar(){
+            console.log("Executar");
+        }
+
+        const formu = document.querySelector('input');
+
+        // formu.addEventListener('focus',executar) // O elemento ganha o foco
+        //formu.addEventListener('blur',executar) // O elemento perde o foco
+
+        formu.addEventListener('blur',() => {
+            if( formu.value === ""){
+            executar()
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
