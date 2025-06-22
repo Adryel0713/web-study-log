@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body onload="executar()"> -->
+<body>
+    
+    
+    <input type="text">
+
+
+    <script>
+        function executar(){
+            console.log("Executar");
+        }
+
+        const entrada = document.querySelector('input');
+        //entrada.addEventListener('keydown',executar); // O usuário pressiona uma tecla ( enquanto a tecla é pressionada )
+        //entrada.addEventListener('keyup',executar); // Usuário solta uma tecla
+        entrada.addEventListener('keypress',executar); // Caracteres estão sendo inseridos
+    </script>
+</body>
+</html>
